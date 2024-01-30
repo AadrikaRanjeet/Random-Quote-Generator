@@ -1,0 +1,71 @@
+#root,htnl,body{
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.app
+{
+  background: linear-gradient(rgba(169, 164, 164, 0.3),rgba(177, 175, 175, 0.3)),url('./images/bg_auto_x2.jpg');
+  background-size:auto, cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ height: 100vh;
+ 
+}
+.card
+{
+  
+  width: 45%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.btn
+{
+  display: flex;
+  margin-top: 250px;
+  border-radius: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(122, 138, 97);
+  color: rgb(18, 18, 18);
+  box-shadow: 1px 1px 10px 10px rgba(142, 95, 64, 0.3);
+  font-style: oblique;
+  font-weight: bold;
+}
+.btn-dark
+{
+  width: 130px;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-4px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(4px);
+  }
+}
+
+.shake-animation:hover {
+  animation: shake 1.5s;
+}
+@media only screen and (max-width:600px)
+{
+  .card{
+    width: 80%;
+    height: 30%;
+  }
+}
